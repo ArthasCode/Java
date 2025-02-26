@@ -1,7 +1,7 @@
-public class Carro {
+public class Veiculo {
     String modelo;
 
-    public Carro(String modelo){
+    public Veiculo(String modelo) {
         this.modelo = modelo;
     }
 
@@ -9,7 +9,7 @@ public class Carro {
         return "Modelo: "+ modelo;
     }
     public static void main(String[] args) {
-        Carro fusca = new Carro("fusca");
+        Veiculo fusca = new Veiculo("fusca");
         
         System.out.println(fusca);
     }
