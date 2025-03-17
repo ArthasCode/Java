@@ -24,22 +24,26 @@ public class DataStructure {
     private class IteratorThroughLists implements DataStructureIterator{
         
         int nextIndex = 0;
+        
+        @Override
         public boolean hasNext(){
 
             return (nextIndex <= ARRAY_LENGTH - 1);
         }
 
+        @Override
         public Integer next(){
             Integer retvalue = Integer.valueOf(arrayOfIntegers[nextIndex]);
 
             nextIndex += 2;
             return retvalue;
         }
-
+    
+        
+}
         public static void main(String[] args) {
             DataStructure ds = new DataStructure();
             ds.showData();
         }
-}
 }
 
